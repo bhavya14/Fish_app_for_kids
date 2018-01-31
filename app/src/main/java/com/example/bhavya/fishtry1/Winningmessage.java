@@ -31,9 +31,19 @@ public class Winningmessage extends Fragment  {
 
                 Log.d("hey","-----------------------");
                 mainActivity.play();
+                 mainActivity.onCreate(null);
                
             }
         });
+        
+        
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainActivity.finish();
+            }
+        });
+
 
 
         return v;
