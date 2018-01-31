@@ -28,16 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         if(test==0)
         {super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);}
-
         count=0;
-        Log.d("JAtin",""+count);
-       // frag = (playagainfrag)getSupportFragmentManager().findFragmentById(R.id.fragment3) ;
-       // frag.getView().setVisibility(View.GONE);
-        //frag.p=MainActivity.this;
         frag= (Winningmessage) getSupportFragmentManager().findFragmentById(R.id.fragment);
         frag.getView().setVisibility(View.GONE);
         relativeLayout= (RelativeLayout) findViewById(R.id.content_main);
@@ -144,14 +138,6 @@ public class MainActivity extends AppCompatActivity {
 
             relativeLayout.setBackgroundColor(Color.BLACK);
             frag.getView().setVisibility(View.VISIBLE);
-
-/*
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            fragment= new fragment1();
-            ft.add(R.id.content_main,fragment,"frag1");
-            ft.commit();
-            //ft.addToBackStack(null);
-            fragment.act = this;*/
         }
     }
 
