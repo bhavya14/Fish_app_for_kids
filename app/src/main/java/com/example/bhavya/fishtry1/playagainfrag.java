@@ -42,6 +42,13 @@ public class playagainfrag extends Fragment {
                     }
                 }
         );
+          exit.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        p.finish();
+                    }
+                }
+        );
         return view;
     }
 }
