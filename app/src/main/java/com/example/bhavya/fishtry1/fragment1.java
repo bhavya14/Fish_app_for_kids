@@ -22,7 +22,6 @@ public class fragment1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        //final RelativeLayout buttonContainer = (RelativeLayout) getView().findViewById(R.id.a12);
        View view =  inflater.inflate(R.layout.fragment_fragment1, container,false);
         fireworks = (GifTextView) view.findViewById(R.id.fireworks1);
         final Handler handler = new Handler();
@@ -32,14 +31,8 @@ public class fragment1 extends Fragment {
                 //Do something after 2000ms
                 fireworks.animate().alpha(0f);
                 calling();
-
-
             }
         }, 2000);
-
-
-        // Inflate the layout for this fragment
-
         return view;
     }
 
